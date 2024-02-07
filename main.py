@@ -4,7 +4,7 @@ import google.cloud
 from google.cloud import firestore
  
 # Authenticate to Firestore with the JSON account key.
-db = firestore.Client.from_service_account_json("testdata1-20ec5-firebase-adminsdk-an9r6-d15c118c96.json")
+db = firestore.Client.from_service_account_json("ServiceKey.json")
  
 # Create a reference to the Google post.
 doc_ref = db.collection("ScanData").document("5aXKu2fWBVm3OwR7rxnS")
